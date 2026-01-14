@@ -28,7 +28,7 @@ class Section extends React.Component{
           <div className="mt-40">
             <h1 className="mx-5 text-white font-semibold font-sans text-2xl capitalize text-left">our mission</h1>
               <p className="text-white font-sans font-normal mx-5 text-sm">
-                Eros imperdiet, quibusdam! Sit aenean. Quas justo nobis illum natus magni accumsan volutpat nullam facere, nisi nostra. Parturient, perspiciatis blanditiis consequat curae asperiores voluptate.
+                We educate youth and raise awareness about the dangers of corruption, aspiring towards a corruption- free society.
               </p>
             <div className="pt-5">
               <a href="#" className="font-sans font-semibold capitalize text-lg text-white rounded-sm hover:bg-white hover:text-red-900 hover:underline ring-white ring py-3 px-5 mx-5">read more</a>
