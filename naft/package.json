@@ -1,13 +1,17 @@
 {
+  "homepage": "https://github.com/Gabriel-3191997/naft_website.git",
   "name": "naft",
   "version": "0.0.0",
   "private": true,
   "type": "module",
-    "scripts": {
+  "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.1.0",
@@ -26,6 +30,7 @@
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
+    "gh-pages": "^6.3.0",
     "vite": "npm:rolldown-vite@7.2.5"
   },
   "overrides": {

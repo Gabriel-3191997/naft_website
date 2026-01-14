@@ -10,5 +10,5 @@ export default defineConfig({
      tailwindcss(),
 
   ],
-  base: '/nasseman_art_of_transparency/'
+  base: '/naft_website/'
 })
