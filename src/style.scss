@@ -1,0 +1,27 @@
+$bg-img: url('images/img1.jpeg');
+$bg:url('images/img2.jpeg');
+$bg-repeat:no-repeat;
+$bg-cover:cover;
+$bg-post:center;
+$img-opac:0.9;
+$img-height:auto;
+
+#card-1{
+
+  background-image: $bg-img;
+  background-repeat: $bg-repeat;
+  background-size: $bg-cover;
+  background-position: $bg-post;
+  height: $img-height;
+  opacity: $img-opac;
+}
+
+#card{
+
+  background-image: $bg;
+  background-repeat: $bg-repeat;
+  background-size: $bg-cover;
+  background-position: $bg-post;
+  height: $img-height;
+  opacity: $img-opac;
+}

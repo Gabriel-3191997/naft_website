@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './style.scss'
 import TopNav from './components/topbar'
 import NavBar from './components/navbar'
 import Advertise from './components/advertise'

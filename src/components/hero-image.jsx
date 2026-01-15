@@ -9,7 +9,7 @@ class HeroSection extends React.Component{
       <>
       <div className="h-auto pt-45 md:pt-45 md:mb-8  bg-white md:bg-white ">
         <div className="flex flex-nowrap justify-center">
-          <img src={logo} className="rounded-full border border-red-900 w-20 h-20 md:w-24 cursor-pointer md:h-24"/>
+          <img src={logo} className="rounded-full border border-red-900 w-20 h-20 md:w-24 cursor-pointer md:h-24" alt="LOGO"/>
         </div>
         <div className="flex flex-wrap justify-center mt-5">
           <h1 className="text-4xl md:text-4xl text-red-900 font-semibold text-center capitalize text-balance">nasseman art of <br/> transparency</h1>
@@ -26,10 +26,11 @@ and films.
             </div>
 
         </div>
+        {/*Hero image */}
         <div className="flex flex-wrap justify-center mt-10 mx-2 pb-20">
           <img
             src={img}
-            alt="Hero"
+            alt="Hero-image"
             className="rounded-lg md:rounded-lg w-auto h-auto md:min-h-50 md:w-1/2 md:object-cover hover:scale-110 hover:cursor-pointer"
           />
         </div>
