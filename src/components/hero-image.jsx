@@ -7,7 +7,7 @@ class HeroSection extends React.Component{
 
     return(
       <>
-      <div className="h-auto pt-45 md:pt-48 md:mb-8  bg-white md:bg-white ">
+      <div className="h-auto pt-45 md:pt-45 md:mb-8  bg-white md:bg-white ">
         <div className="flex flex-nowrap justify-center">
           <img src={logo} className="rounded-full border border-red-900 w-20 h-20 md:w-24 cursor-pointer md:h-24"/>
         </div>
