@@ -9,7 +9,7 @@ class HeroSection extends React.Component{
       <>
       <div className="h-auto pt-45 md:pt-48 md:mb-8  bg-white md:bg-white ">
         <div className="flex flex-nowrap justify-center">
-          <img src={logo} className="rounded-full border border-red-900 w-20 h-20 md:w-30 md:h-30"/>
+          <img src={logo} className="rounded-full border border-red-900 w-20 h-20 md:w-24 cursor-pointer md:h-24"/>
         </div>
         <div className="flex flex-wrap justify-center mt-5">
           <h1 className="text-4xl md:text-4xl text-red-900 font-semibold text-center capitalize text-balance">nasseman art of <br/> transparency</h1>
