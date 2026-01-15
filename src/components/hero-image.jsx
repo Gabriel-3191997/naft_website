@@ -1,13 +1,17 @@
 import React from 'react';
 import img from '../images/image.jpeg';
+import logo from '../images/logo.jpeg';
 class HeroSection extends React.Component{
 
   render(){
 
     return(
       <>
-      <div className="h-auto pt-50  bg-white md:bg-white ">
-        <div className="flex flex-wrap justify-center">
+      <div className="h-auto pt-45 md:pt-48 md:mb-8  bg-white md:bg-white ">
+        <div className="flex flex-nowrap justify-center">
+          <img src={logo} className="rounded-full border border-red-900 w-20 h-20 md:w-30 md:h-30"/>
+        </div>
+        <div className="flex flex-wrap justify-center mt-5">
           <h1 className="text-4xl md:text-4xl text-red-900 font-semibold text-center capitalize text-balance">nasseman art of <br/> transparency</h1>
           </div>
           <div className="flex flex-wrap justify-center">
