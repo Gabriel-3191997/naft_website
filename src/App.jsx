@@ -18,7 +18,7 @@ class App extends React.Component {
         </div>
 
         {/* Main content */}
-        <div className="pt-[100px]">
+        <div className="bg-white">
           <HeroSection />
           <Section />
           <Footer />

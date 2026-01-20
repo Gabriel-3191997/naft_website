@@ -11,6 +11,7 @@ class Footer extends React.Component{
 <footer className="bg-white">
     <div className="mx-auto w-full max-w-screen-xl">
       <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+        {/* address */}
         <div>
           <h2 className="mb-6 text-sm font-semibold text-heading uppercase">address</h2>
             <ul className="text-body font-medium">
@@ -20,6 +21,7 @@ class Footer extends React.Component{
             </ul>
         </div>
         <div>
+          {/* pages link */}
             <h2 className="mb-6 text-sm font-semibold text-heading uppercase">resource</h2>
             <ul className="text-body font-medium">
               <li className="mb-4">
@@ -36,6 +38,7 @@ class Footer extends React.Component{
                 </li>
             </ul>
         </div>
+        {/* social media platforms */}
         <div>
             <h2 className="mb-6 text-sm font-semibold text-heading uppercase">follow us</h2>
             <ul className="text-body font-medium">
@@ -51,6 +54,7 @@ class Footer extends React.Component{
 
             </ul>
         </div>
+        {/* external links */}
         <div>
             <h2 className="mb-6 text-sm font-semibold text-heading uppercase">Legal</h2>
             <ul className="text-body font-medium">
@@ -62,6 +66,7 @@ class Footer extends React.Component{
                 </li>
             </ul>
         </div>
+        {/* other links */}
         <div className="mb-20">
             <h2 className="mb-6 text-sm font-semibold text-heading uppercase">links</h2>
             <ul className="text-body font-medium">
@@ -77,11 +82,12 @@ class Footer extends React.Component{
             </ul>
         </div>
     </div>
+    {/* Copyright */}
     <div className="px-4 py-6 bg-white md:flex md:items-center md:justify-between">
         <span className="text-sm text-body sm:text-center text-red-900">© 2026 <a href="#" className="text-red-900 capitalize">nasseman art of transparecny</a>. All Rights Reserved.
         </span>
         <div className="flex mt-4 sm:justify-center md:mt-0 space-x-2 rtl:space-x-reverse">
-
+          {/* social media icons */}
           <SocialmediaIcons/>
           </div>
       </div>
