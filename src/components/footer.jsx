@@ -1,5 +1,6 @@
 import React from 'react';
 import SocialmediaIcons from '../components/socialmedia-icons';
+import GetUpdates from '../components/form';
 class Footer extends React.Component{
 
   render(){
@@ -53,6 +54,14 @@ class Footer extends React.Component{
                 </li>
 
             </ul>
+        </div>
+        {/* sign up for updates */}
+        <div>
+          <h2 className="mb-6 text-sm font-semibold text-heading uppercase">new settler</h2>
+            <GetUpdates/>
+          <p className="py-5 text-sm capitalize font-sans">
+            by signning up you've agree to receive updates
+          </p>
         </div>
         {/* external links */}
         <div>
