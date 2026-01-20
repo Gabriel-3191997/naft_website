@@ -37,7 +37,7 @@ class Section extends React.Component{
         </div>
       </div>
       {/* Download Brochure */}
-      <div className="flex flex-wrap justify-center pt-8 bg-white mb-20">
+      <div className="flex flex-wrap justify-center pt-8 bg-white mb-28">
         <a href="#" className="bg-red-900 py-4 px-8 rounded-md border-0 text-white text-center font-sans text-lg capitalize">
           download brochure
         </a>

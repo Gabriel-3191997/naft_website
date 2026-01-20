@@ -8,7 +8,7 @@ class Footer extends React.Component{
       <>
 
 
-<footer class="bg-gray-100">
+<footer class="bg-white">
     <div class="mx-auto w-full max-w-screen-xl">
       <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
         <div>
@@ -57,7 +57,7 @@ class Footer extends React.Component{
                 </li>
             </ul>
         </div>
-        <div>
+        <div className="mb-20">
             <h2 class="mb-6 text-sm font-semibold text-heading uppercase">links</h2>
             <ul class="text-body font-medium">
                 <li class="mb-4">
@@ -72,7 +72,7 @@ class Footer extends React.Component{
             </ul>
         </div>
     </div>
-    <div class="px-4 py-6 bg-light md:flex md:items-center md:justify-between">
+    <div class="px-4 py-6 bg-white md:flex md:items-center md:justify-between border-t border-red-900">
         <span class="text-sm text-body sm:text-center text-red-900">© 2026 <a href="#" className="text-red-900 capitalize">nasseman art of transparecny</a>. All Rights Reserved.
         </span>
         <div class="flex mt-4 sm:justify-center md:mt-0 space-x-2 rtl:space-x-reverse">
