@@ -1,18 +1,17 @@
 import React from "react";
 import HeroSection from "../hero-image";
-import Section from "../section";
+import ContentSection from "../contents";
 import Footer from "../footer";
 
-class Home extends React.Component {
+class About extends React.Component {
   render() {
     return (
       <>
-        <HeroSection />
-        <Section />
+        <ContentSection />
         <Footer />
       </>
     );
   }
 }
 
-export default Home;
+export default About;

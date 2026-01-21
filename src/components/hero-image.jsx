@@ -1,6 +1,7 @@
 import React from 'react';
 import img from '../images/image.jpeg';
 import logo from '../images/logo.jpeg';
+
 class HeroSection extends React.Component{
 
   render(){
@@ -28,6 +29,7 @@ and films.
         </div>
         {/*Hero image */}
         <div className="flex flex-wrap justify-center mt-10 mx-2 pb-20">
+
           <img
             src={img}
             alt="Hero-image"
