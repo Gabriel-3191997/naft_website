@@ -1,13 +1,15 @@
 import React from "react";
-import HeroSection from "../hero-image";
-import ContentSection from "../contents";
+import Advertise from "../advertise";
 import Footer from "../footer";
+import Contents from "../contents";
+
 
 class About extends React.Component {
   render() {
     return (
       <>
-        <ContentSection />
+        <Advertise />
+        <Contents />
         <Footer />
       </>
     );
