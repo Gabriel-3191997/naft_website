@@ -8,7 +8,6 @@ class About extends React.Component {
   render() {
     return (
       <>
-        <Advertise />
         <HeroSection />
         <Contents />
         <Footer />
