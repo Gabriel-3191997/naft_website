@@ -1,11 +1,13 @@
 import React from 'react';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import './style.scss';
 import './App.css';
 import NavBar from './components/navbar';
 import Advertise from './components/advertise';
-import HeroSection from './components/hero-image';
-import Section from './components/section';
-import Footer from './components/footer';
+import Home from './components/Pages/Home';
+import About from './components/Pages/About';
+import Job from './components/Pages/Job';
+import FAQ from './components/Pages/FAQ';
 
 class App extends React.Component {
   render() {
@@ -17,11 +19,15 @@ class App extends React.Component {
           <Advertise />
         </div>
 
-        {/* Main content */}
+        {/* Main content with routing */}
         <div className="bg-white">
-          <HeroSection />
-          <Section />
-          <Footer />
+          <Routes>
+            <Route path="/" element={<Navigate to="/home" replace />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/career" element={<Job />} />
+            <Route path="/faq" element={<FAQ />} />
+          </Routes>
         </div>
       </>
     );
