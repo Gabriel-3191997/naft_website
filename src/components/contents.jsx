@@ -15,7 +15,22 @@ class ContentSection extends React.Component {
 
         </div>
         <div className="pt-10 justify-center flex flex-wrap mx-5 md:mx-50 mb-10">
-          <p className="text-xl">We are a team of passionate individuals dedicated to providing high-quality services and products to our customers.</p>
+          <p className="text-md w-2xl text-center">Nasseman Art For Transparency (NAFT) is a
+            Non-Governmental Organization (NGO)
+            founded by Mr. Rabbie Nassrallah, popularly
+
+            known as NASSEMAN, a Global Music Anti-
+            Corruption Ambassador for Transparency
+
+            International and FairPlay Music. Nasseman Art
+            For Transparency is on a mission to empower
+            young people to raise their voices against
+            corruption and injustice through various artistic
+            mediums such as education, music, art, drama,
+            and films. <button type="button" className="text-red-900 underline bg-white cursor-pointer">Read More</button>
+            
+            
+            </p>
         </div>
       </>
     );
