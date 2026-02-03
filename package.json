@@ -16,6 +16,7 @@
     "@fortawesome/react-fontawesome": "^3.1.1",
     "@material-tailwind/react": "^2.1.10",
     "flowbite": "^4.0.1",
+    "flowbite-react": "^0.12.16",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-responsive-carousel": "^3.2.23",

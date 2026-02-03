@@ -1,110 +1,63 @@
 import React from 'react';
-import img from '../images/image.jpeg';
+import { Carousel } from 'react-responsive-carousel'; // Import Carousel component
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carousel styles
+import image1 from '../images/img1.jpeg';
+import image2 from '../images/WhatsApp Image 2025-10-14 at 9.27.21 AM.jpeg';
+import image3 from '../images/WhatsApp Image 2025-10-14 at 9.27.19 AM.jpeg';
+import image4 from '../images/WhatsApp Image 2025-10-14 at 9.24.45 AM.jpeg';
 
-class Carousel extends React.Component {
+class CarouselComponent extends React.Component { // Renamed to avoid conflict
   render() {
     return (
-      <div
-        id="animation-carousel"
-        className="relative w-full"
-        data-carousel="static"
-      >
-        <div className="relative h-56 overflow-hidden rounded-base md:h-96">
-
-          <div className="hidden duration-200 ease-linear" data-carousel-item>
-            <img
-              src={img}
-              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="Slide 1"
-            />
-          </div>
-
-          <div className="hidden duration-200 ease-linear" data-carousel-item>
-            <img
-              src="/docs/images/carousel/carousel-2.svg"
-              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="Slide 2"
-            />
-          </div>
-
-          <div
-            className="hidden duration-200 ease-linear"
-            data-carousel-item="active"
-          >
-            <img
-              src="/docs/images/carousel/carousel-3.svg"
-              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="Slide 3"
-            />
-          </div>
-
-          <div className="hidden duration-200 ease-linear" data-carousel-item>
-            <img
-              src="/docs/images/carousel/carousel-4.svg"
-              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="Slide 4"
-            />
-          </div>
-
-          <div className="hidden duration-200 ease-linear" data-carousel-item>
-            <img
-              src="/docs/images/carousel/carousel-5.svg"
-              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="Slide 5"
-            />
+      <>
+        {/*Hero image slideshow */}
+        <div className="flex flex-wrap justify-center mt-10 mx-2 pb-20">
+          <div className="w-full md:w-1/2">
+            <Carousel
+              autoPlay
+              infiniteLoop
+              showThumbs={false}
+              showStatus={false}
+              showIndicators
+              interval={4000}
+              swipeable
+              emulateTouch
+              className="rounded-sm overflow-hidden"
+            >
+              <div>
+                <img
+                  src={image1}
+                  alt="Young people engaging in NAFT activities"
+                  className="w-full h-full md:object-cover"
+                />
+              </div>
+              <div>
+                <img
+                  src={image2}
+                  alt="Community empowerment through art and music"
+                  className="w-full h-full md:object-cover"
+                />
+              </div>
+              <div>
+                <img
+                  src={image3}
+                  alt="Raising voices against corruption and injustice"
+                  className="w-full h-full md:object-cover"
+                />
+              </div>
+              <div>
+                <img
+                  src={image4}
+                  alt="Raising voices against corruption and injustice"
+                  className="w-full h-full md:object-cover"
+                />
+              </div>
+            </Carousel>
           </div>
         </div>
-
-        {/* Previous Button */}
-        <button
-          type="button"
-          className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-prev
-        >
-          <span className="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30">
-            <svg
-              className="w-5 h-5 text-white"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="m15 19-7-7 7-7"
-              />
-            </svg>
-          </span>
-        </button>
-
-        {/* Next Button */}
-        <button
-          type="button"
-          className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-next
-        >
-          <span className="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30">
-            <svg
-              className="w-5 h-5 text-white"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="m9 5 7 7-7 7"
-              />
-            </svg>
-          </span>
-        </button>
-      </div>
+      </>
     );
   }
 }
 
-export default Carousel;
+export default CarouselComponent;
