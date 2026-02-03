@@ -10,7 +10,37 @@ import Job from './components/Pages/Job';
 import FAQ from './components/Pages/FAQ';
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isLoading: true,
+    };
+    this.loaderTimeout = null;
+  }
+
+  componentDidMount() {
+    // Keep the loader visible for 20 seconds after the app mounts
+    this.loaderTimeout = setTimeout(() => {
+      this.setState({ isLoading: false });
+      this.loaderTimeout = null;
+    }, 20000);
+  }
+
+  componentWillUnmount() {
+    if (this.loaderTimeout) {
+      clearTimeout(this.loaderTimeout);
+    }
+  }
+
   render() {
+    if (this.state.isLoading) {
+      return (
+        <div className="loader-container">
+          <div className="loader-spinner" />
+        </div>
+      );
+    }
+
     return (
       <>
         {/* Top fixed nav */}
